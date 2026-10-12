@@ -1,0 +1,31 @@
+Package: definecore
+Title: Generate CDISC Define-XML from Metacore Objects
+Version: 0.1.0
+Authors@R: 
+    person("Shakhar Eranna Chalwadi", role = c("aut", "cre"),
+           email = "skrchalwadicg@gmail.com")
+Description: Generates CDISC Define-XML documents (versions 2.0 and 2.1) from
+    metacore metadata objects. Maps dataset, variable, codelist, and derivation
+    information into an ODM-based Define-XML structure suitable for further
+    review and regulatory use. Integrates with the pharmaverse metacore ecosystem.
+License: MIT + file LICENSE
+URL: https://github.com/shekharchalwadigrepo-hub/definecore
+BugReports: https://github.com/shekharchalwadigrepo-hub/definecore/issues
+Depends: R (>= 4.1.0)
+Imports:
+    metacore,
+    xml2,
+    dplyr,
+    rlang,
+    cli,
+    glue,
+    magrittr
+Suggests:
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+VignetteBuilder: knitr

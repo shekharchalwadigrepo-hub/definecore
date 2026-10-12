@@ -1,0 +1,44 @@
+---
+title: "Generating Define-XML from metacore"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Generating Define-XML from metacore}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(definecore)
+library(metacore)
+```
+
+## Introduction
+
+The `definecore` package provides a direct path from a `metacore` object to a CDISC Define-XML document. This complements the existing `defineR` package (spreadsheet-driven) by leveraging the standardized metacore structure used across the pharmaverse.
+
+## Example
+
+```{r, eval = FALSE}
+meta <- load_metacore(metacore_example("pilot_ADaM.rda"))
+
+write_define_xml(
+  meta,
+  file = "define.xml",
+  define_version = "2.1",
+  study_name = "CDISCPILOT01",
+  study_description = "CDISC Pilot Study",
+  standard_name = "ADaM-IG",
+  standard_version = "1.1"
+)
+```
+
+## Next Steps
+
+Review the generated XML, add any missing value-level metadata (WhereClauses), document leaves, and validate against the official CDISC Define-XML schema before use in a regulatory submission.
