@@ -19,3 +19,5 @@ None.
   metacore metadata format used in the pharmaverse.
 - Output is intended as a solid starting point; users should validate against
   the official CDISC schema and review value-level metadata before regulatory use.
+- Fixed examples: replaced \dontrun{} with \donttest{} as requested. Example now
+  uses a temporary file and cleans up after itself.

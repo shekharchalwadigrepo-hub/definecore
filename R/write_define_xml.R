@@ -32,10 +32,12 @@
 #' @importFrom metacore is_metacore
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' library(metacore)
 #' meta <- load_metacore(metacore_example("pilot_ADaM.rda"))
-#' write_define_xml(meta, "define.xml", study_name = "CDISCPILOT01")
+#' tmp <- tempfile(fileext = ".xml")
+#' write_define_xml(meta, tmp, study_name = "CDISCPILOT01")
+#' unlink(tmp)
 #' }
 write_define_xml <- function(
     meta,

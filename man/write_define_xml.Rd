@@ -54,9 +54,11 @@ derivation (MethodDef) metadata suitable as a starting point for
 regulatory submissions.
 }
 \examples{
-\dontrun{
+\donttest{
 library(metacore)
 meta <- load_metacore(metacore_example("pilot_ADaM.rda"))
-write_define_xml(meta, "define.xml", study_name = "CDISCPILOT01")
+tmp <- tempfile(fileext = ".xml")
+write_define_xml(meta, tmp, study_name = "CDISCPILOT01")
+unlink(tmp)
 }
 }
