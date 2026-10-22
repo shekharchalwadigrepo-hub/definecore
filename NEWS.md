@@ -1,3 +1,9 @@
+# definecore 0.1.1
+
+* Fixed examples: replaced `\dontrun{}` with `\donttest{}` as requested by CRAN.
+* Corrected example to use `load()` on the metacore `.rda` example file.
+* Example now writes to a temporary file and cleans up afterward.
+
 # definecore 0.1.0
 
 * Initial release.

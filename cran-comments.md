@@ -5,14 +5,19 @@
 ## R CMD check results
 There were no ERRORs or WARNINGs.
 
-NOTES:
-- checking CRAN incoming feasibility: New submission
+One NOTE may appear:
 - checking for future file timestamps: unable to verify current time
   (common on some Windows systems; not related to package content)
+
+## Downstream dependencies
+None.
 
 ## Notes to CRAN
 - Initial release.
 - Package generates Define-XML 2.0/2.1 from metacore objects.
-- Complements the spreadsheet-based defineR package.
-- Examples use \donttest{} as requested in previous review.
-- Output is a solid starting point; users should validate against the official CDISC schema before regulatory use.
+- Complements the spreadsheet-based defineR package by integrating with the
+  metacore metadata format used in the pharmaverse.
+- Output is intended as a solid starting point; users should validate against
+  the official CDISC schema and review value-level metadata before regulatory use.
+- Fixed examples: replaced \dontrun{} with \donttest{} as requested. Example now
+  uses a temporary file and cleans up after itself.

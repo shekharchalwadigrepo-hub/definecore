@@ -1,6 +1,6 @@
 Package: definecore
 Title: Generate CDISC Define-XML from Metacore Objects
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: 
     person("Shakhar Eranna Chalwadi", role = c("aut", "cre"),
            email = "skrchalwadicg@gmail.com")
