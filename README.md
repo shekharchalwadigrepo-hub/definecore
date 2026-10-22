@@ -19,14 +19,14 @@ library(definecore)
 library(metacore)
 
 # Load example metacore object
-meta <- load_metacore(metacore_example("pilot_ADaM.rda"))
+load(metacore_example("pilot_ADaM.rda"))  # loads object named 'metacore'
 
 # Or from define.xml
 # meta <- define_to_metacore("path/to/define.xml")
 
 # Generate Define-XML 2.1
 write_define_xml(
-  meta,
+  metacore,
   file = "define.xml",
   define_version = "2.1",
   study_name = "CDISCPILOT01",

@@ -26,10 +26,10 @@ The `definecore` package provides a direct path from a `metacore` object to a CD
 ## Example
 
 ```{r, eval = FALSE}
-meta <- load_metacore(metacore_example("pilot_ADaM.rda"))
+load(metacore_example("pilot_ADaM.rda"))  # loads object named 'metacore'
 
 write_define_xml(
-  meta,
+  metacore,
   file = "define.xml",
   define_version = "2.1",
   study_name = "CDISCPILOT01",

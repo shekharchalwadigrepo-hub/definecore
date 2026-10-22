@@ -56,9 +56,9 @@ regulatory submissions.
 \examples{
 \donttest{
 library(metacore)
-meta <- load_metacore(metacore_example("pilot_ADaM.rda"))
+load(metacore_example("pilot_ADaM.rda"))  # loads object named 'metacore'
 tmp <- tempfile(fileext = ".xml")
-write_define_xml(meta, tmp, study_name = "CDISCPILOT01")
+write_define_xml(metacore, tmp, study_name = "CDISCPILOT01")
 unlink(tmp)
 }
 }
