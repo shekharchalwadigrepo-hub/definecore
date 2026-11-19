@@ -1,0 +1,28 @@
+url: https://shekharchalwadigrepo-hub.github.io/definecore
+
+template:
+  bootstrap: 5
+  bootswatch: flatly
+
+navbar:
+  structure:
+    left: [intro, reference, articles, news]
+    right: [search, github]
+  components:
+    articles:
+      text: Articles
+      menu:
+      - text: Generating Define-XML from metacore
+        href: articles/generate-define.html
+
+reference:
+  - title: Main functions
+    contents:
+    - write_define_xml
+
+home:
+  links:
+  - text: CRAN
+    href: https://cran.r-project.org/package=definecore
+  - text: GitHub
+    href: https://github.com/shekharchalwadigrepo-hub/definecore
