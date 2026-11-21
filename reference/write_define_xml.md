@@ -309,7 +309,7 @@ write_define_xml(metacore, tmp, study_name = "CDISCPILOT01")
 #> Warning: Unknown or uninitialised column: `mandatory`.
 #> Warning: Unknown or uninitialised column: `mandatory`.
 #> Warning: Unknown or uninitialised column: `mandatory`.
-#> ✔ Define-XML 2.1 written to /tmp/RtmpBk6mwU/file199f20ae84eb.xml
+#> ✔ Define-XML 2.1 written to /tmp/RtmpBcLQXT/file1b0e25b3fb08.xml
 #> ! This is a core generation. Review OIDs, value-level metadata, documents, and validate against CDISC schema before submission.
 unlink(tmp)
 # }
